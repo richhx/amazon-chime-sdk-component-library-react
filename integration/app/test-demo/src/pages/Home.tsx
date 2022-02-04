@@ -19,6 +19,18 @@ export const Home: React.FC = () => (
           'useAttendeeAudioStatus',
         ]}
       />
+      <TestApp
+        name='Video Filter Test App'
+        route={routes.VIDEO_FILTER_TEST}
+        components={[
+          `BackgroundBlurProvider`,
+          `BackgroundReplacementProvider`
+        ]}
+        hooks={[
+          `useBackgroundBlurProvider`,
+          'useBackgroundReplacementProvider'
+        ]}
+        />
     </ul>
   </>
 );
